@@ -21,7 +21,7 @@ pipeline {
         	echo "deployment has been done on QA!"
 			 }
 			elif ( env.ENVIRONMENT == 'UAT' ){
-    		sh 'cp target/CICD.war /home/dhairya/devops/apache-tomcat-8.5.99/webapps'
+    		sh 'cp target/CICD.war /home/dhairya/appfiles/apache-tomcat-8.5.99/webapps'
     		echo "deployment has been done on UAT!"
 			}
 			echo "deployment has been done!"
